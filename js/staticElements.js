@@ -5,5 +5,5 @@ function incluirHead() {
   
 function incluirFooter() {
   var footer = document.getElementById('footer');
-  footer.innerHTML = '<footer><button id="linkedin"><a href="https://github.com/Davidmg5k"><i class="fab fa-linkedin"></a></i></button><button id="github"><a href="https://www.linkedin.com/in/david-martinez-guerrero-desarrollador-software/"><i class="fab fa-github"></i></a></button><p>Derechos de autor - David Martinez Guerrero</p><p>2023</p></footer>';
+  footer.innerHTML = '<footer><button id="linkedin"><a href="https://www.linkedin.com/in/david-martinez-guerrero-desarrollador-software/"><i class="fab fa-linkedin"></a></i></button><button id="github"><a href="https://github.com/Davidmg5k"><i class="fab fa-github"></i></a></button><p>Derechos de autor - David Martinez Guerrero</p><p>2023</p></footer>';
 }
