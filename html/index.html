@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Encriptador de texto</title>    
+</head>
+<script src="../js/staticElements.js"></script>
+<body>
+  <header>
+    <div class="menu_barra">
+      <a href="./index.html"><img class="logo" src="../docs/logos/Logo.png" alt="logo_alura"></a>
+      <button id="boton_menu_barra"><i class="fas fa-bars" id="logo_menu"></i></button>      
+    </div>
+    <nav id="menu" class="hidden">          
+      <ul>
+        <li>
+          <button id="boton_d_encriptar" data-tooltip="Selecciona este boton sideseas encriptar o desencriptar">Desencriptar</button></li>
+        <li>
+          <label for="encriptar_archivo">Encriptar archivo</label>
+          <input type="file" id="encriptar_archivo"></li>
+        <li>
+          <label for="desencriptar_archivo">Desencriptar archivo</label>
+          <input type="file" id="desencriptar_archivo"></li>      
+        <li><button id="descargar_historial_chat">Descargar chat</button></li>
+        <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h5 id="info_e_d">Para encriptar el texto se debe tener en cuenta; escribir con letras minúsculas y sin acentos.</h5>
+    <div class="chat">        
+        <div class="chat_mensajes" id="chat_mensajes"></div>
+        <div class="chat_entrada">
+          <input type="text" id="entrada" placeholder="¿Qué deseas encriptar?">
+          <button id="btn_enviar">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+    </div>
+  </main>  
+  <div id="footer"></div>
+  <script>incluirFooter();</script>
+  <script src="../js/script.js" type="module"></script>
+</body>
+</html>
